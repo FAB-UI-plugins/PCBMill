@@ -723,7 +723,7 @@ $('.obj').click(function () {
 		  dataType : 'json',
           type: "POST", 
 		  async: true,
-          data : { printable : true, id_object : id},
+          data : { printable : true, id_object : id, print_type : 'subtractive'},
 		  beforeSend: function( xhr ) {
 		  }
 	}).done(function(response) {

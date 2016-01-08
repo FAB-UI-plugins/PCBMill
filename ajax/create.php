@@ -130,7 +130,7 @@ $db    = new Database();
 /** LOAD FILE */
 $_file = $db->query('select * from sys_files where id='.$_file_id);
 
-//$_file = $_file[0];
+$_file = $_file[0];
 
 /** ADD TASK */
 $_task_data['user']       = $_SESSION['user']['id'];
